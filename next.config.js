@@ -3,5 +3,6 @@ module.exports = {
   images: {
     domains: ["en.gravatar.com"],
   },
-  output: "export",
+  // This is required to use ISR
+  output: "standalone",
 };
