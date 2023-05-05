@@ -1,8 +1,10 @@
+const path = require("path");
+
 module.exports = {
   trailingSlash: true,
   images: {
     domains: ["en.gravatar.com"],
   },
-  // This is required to use ISR
-  output: "standalone",
+  // output directory for 'next export'
+  output: "out",
 };
