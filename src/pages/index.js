@@ -5,7 +5,7 @@ import AuthorSection from "../components/AuthorSection";
 import FooterSection from "../components/FooterSection";
 import landingData from "../app/data/landingData.json";
 
-export default function Home(props) {
+export default function Home({ landingData }) {
   const { hero, career, author, footer } = landingData;
 
   return (
@@ -29,16 +29,7 @@ export default function Home(props) {
 export async function getStaticProps() {
   return {
     props: {
-      // Set the Set-Cookie header
-      // Note: `maxAge` is in seconds
-      headers: {
-        "Set-Cookie": [
-          "country_code=US; SameSite=None; Secure; maxAge=86400",
-          "region=NY; SameSite=None; Secure; maxAge=86400",
-          "ccpa_applies=true; SameSite=None; Secure; maxAge=86400",
-        ],
-      },
+      landingData,
     },
-    revalidate: 1,
   };
 }
