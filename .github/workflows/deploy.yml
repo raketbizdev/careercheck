@@ -18,6 +18,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+      - name: View npm debug log
+        run: less /home/runner/.npm/_logs/$(ls -t /home/runner/.npm/_logs | head -1)
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
