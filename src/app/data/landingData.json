@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "title": "Welcome to CareerCheck",
+    "subheading": "Find the best career opportunities and advice",
+    "backgroundImage": "images/nordwood-themes-unsplash.jpg"
+  },
+  "career": {
+    "heading": "Explore Popular Careers",
+    "subheading": "Discover the right path for you",
+    "careers": [
+      {
+        "name": "Data Science",
+        "description": "Data Scientists analyze large datasets to extract insights and trends, using statistical models and machine learning techniques. They work in various industries to help organizations make data-driven decisions."
+      },
+      {
+        "name": "Project Management",
+        "description": "Project Managers are responsible for planning, executing, and closing projects. They work closely with teams to ensure projects are completed on time, within scope, and within budget."
+      },
+      {
+        "name": "Backend Development",
+        "description": "Backend Developers build and maintain the server-side of web applications. They focus on implementing the application's logic, database interactions, and server configuration, ensuring a seamless user experience."
+      },
+      {
+        "name": "Frontend Development",
+        "description": "Frontend Developers create user interfaces for web applications. They use HTML, CSS, and JavaScript to build responsive and visually appealing websites, focusing on usability and user experience."
+      },
+      {
+        "name": "Mobile Development",
+        "description": "Mobile Developers create applications for mobile devices, such as smartphones and tablets. They specialize in iOS, Android, or cross-platform development, using various programming languages and frameworks."
+      },
+      {
+        "name": "Social Media Manager",
+        "description": "Social Media Managers create and manage content on various social media platforms. They develop strategies to increase brand awareness, engage audiences, and drive website traffic, ultimately improving business results."
+      },
+      {
+        "name": "Digital Marketer",
+        "description": "Digital Marketers plan and execute marketing strategies for online channels, such as search engines, social media, email, and content marketing. They use data analysis to optimize campaigns and improve ROI."
+      },
+      {
+        "name": "Business Analyst",
+        "description": "Business Analysts work with organizations to improve their processes, systems, and products. They gather and analyze data to identify problems, develop solutions, and help implement changes to drive business success."
+      }
+    ]
+  },
+  "author": {
+    "name": "John Doe",
+    "image": "https://en.gravatar.com/userimage/138937472/f8958db5bfc4ce821a805ec6817731f1?size=250",
+    "description": "John Doe is an experienced career consultant and the founder of CareerCheck. He has helped thousands of individuals navigate their career paths and achieve their professional goals.",
+    "social": {
+      "facebook": "https://www.facebook.com/johndoe",
+      "linkedin": "https://www.linkedin.com/in/johndoe",
+      "github": "https://github.com/johndoe",
+      "instagram": "https://www.instagram.com/johndoe",
+      "youtube": "https://www.youtube.com/user/johndoe"
+    }
+  },
+  "footer": {
+    "copyright": "© 2023 CareerCheck. All rights reserved."
+  }
+}
