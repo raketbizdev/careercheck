@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   trailingSlash: true,
-  output: "standalone",
+  output: "export",
   generateStaticParams: async function () {
     return {
       "/": { page: "/" },
