@@ -1,6 +1,24 @@
 import React from "react";
-import Link from "next/link";
 import AddLinkButton from "./AddLinkButton";
+import SchemaOutlinedIcon from "@mui/icons-material/SchemaOutlined";
+import GavelOutlinedIcon from "@mui/icons-material/GavelOutlined";
+import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
+import DeveloperModeOutlinedIcon from "@mui/icons-material/DeveloperModeOutlined";
+import MobileFriendlyOutlinedIcon from "@mui/icons-material/MobileFriendlyOutlined";
+import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
+import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
+import PieChartSharpIcon from "@mui/icons-material/PieChartSharp";
+
+const iconTable = {
+  Schema: <SchemaOutlinedIcon />,
+  Gavel: <GavelOutlinedIcon />,
+  Code: <CodeOutlinedIcon />,
+  "Developer Mode": <DeveloperModeOutlinedIcon />,
+  "Mobile Friendly": <MobileFriendlyOutlinedIcon />,
+  Share: <ShareOutlinedIcon />,
+  Campaign: <CampaignOutlinedIcon />,
+  "Pie Chart": <PieChartSharpIcon />,
+};
 
 const CareerSection = ({ heading, subheading, careers }) => {
   return (
@@ -9,15 +27,22 @@ const CareerSection = ({ heading, subheading, careers }) => {
       <p className="text-center mb-8">{subheading}</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {careers.map((career) => (
-          <div key={career.name} className="bg-white p-4 rounded shadow">
-            <div>
-              <h3 className="text-2xl font-bold mb-4">{career.name}</h3>
-              <p>{career.description}</p>
+          <div
+            key={career.name}
+            className="bg-white p-4 rounded shadow flex flex-col items-center justify-center"
+          >
+            <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gray-100 text-gray-600 mb-4">
+              {iconTable[career.icon]}
             </div>
-
-            <AddLinkButton href={`/edit/${encodeURIComponent(career.name)}`}>
-              Edit Career
-            </AddLinkButton>
+            <h3 className="text-2xl font-bold mb-4 text-center">
+              {career.name}
+            </h3>
+            <p className="text-center">{career.description}</p>
+            <div className="mt-4">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline">
+                Evaluate Career
+              </button>
+            </div>
           </div>
         ))}
       </div>

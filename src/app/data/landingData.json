@@ -39,6 +39,22 @@
       {
         "name": "Business Analyst",
         "description": "Business Analysts work with organizations to improve their processes, systems, and products. They gather and analyze data to identify problems, develop solutions, and help implement changes to drive business success."
+      },
+      {
+        "name": "Cybersecurity",
+        "description": "Cybersecurity professionals protect computer systems, networks, and data from unauthorized access, theft, and damage. They monitor for security breaches, develop security policies, and implement protective measures to safeguard against cyber attacks."
+      },
+      {
+        "name": "DevOps Engineer",
+        "description": "DevOps Engineers work at the intersection of software development and IT operations. They streamline the software delivery process by automating builds, tests, and deployments, while also ensuring system reliability and stability."
+      },
+      {
+        "name": "Data Analyst",
+        "description": "Data Analysts collect, analyze, and interpret large datasets to identify patterns, trends, and insights. They use statistical methods and data visualization tools to communicate their findings and inform business decisions."
+      },
+      {
+        "name": "IT Support Specialist",
+        "description": "IT Support Specialists provide technical assistance to computer system users. They diagnose and resolve hardware and software issues, install and configure software and hardware, and maintain computer networks and systems."
       }
     ]
   },
