@@ -59,6 +59,7 @@
     ]
   },
   "author": {
+    "heading": "The Author",
     "name": "John Doe",
     "image": "https://en.gravatar.com/userimage/138937472/f8958db5bfc4ce821a805ec6817731f1?size=250",
     "description": "John Doe is an experienced career consultant and the founder of CareerCheck. He has helped thousands of individuals navigate their career paths and achieve their professional goals.",
