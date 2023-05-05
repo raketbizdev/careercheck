@@ -5,6 +5,8 @@ module.exports = {
   images: {
     domains: ["en.gravatar.com"],
   },
-  // output directory for 'next export'
-  output: "out",
+  output: {
+    path: path.join(__dirname, "out"),
+    publicPath: "/",
+  },
 };
