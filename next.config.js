@@ -1,10 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
   images: {
     domains: ["en.gravatar.com"],
+  },
+  exportPathMap: function () {
+    return {
+      "/": { page: "/" },
+    };
+  },
+  exportTrailingSlash: true,
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      "/": { page: "/" },
+    };
   },
 };
 
