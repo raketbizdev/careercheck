@@ -9,9 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: "16"
       - name: Install dependencies
@@ -21,7 +21,7 @@ jobs:
       - name: View npm debug log
         run: less /home/runner/.npm/_logs/$(ls -t /home/runner/.npm/_logs | head -1)
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.4.1
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: .next
