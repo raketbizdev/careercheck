@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const MetaHead = ({ title, description, image, favicon }) => {
+const MetaHead = ({ title, description, image, favicon, baseUrl }) => {
   return (
     <Head>
       <title>CareerCheck</title>
@@ -11,20 +11,14 @@ const MetaHead = ({ title, description, image, favicon }) => {
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta
-        property="og:url"
-        content="https://raketbizdev.github.io/careercheck/"
-      />
+      <meta property="og:url" content={baseUrl} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={`${baseUrl}${image}`} />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta
-        property="twitter:url"
-        content="https://raketbizdev.github.io/careercheck/"
-      />
+      <meta property="twitter:url" content={baseUrl} />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={`${baseUrl}${image}`} />
