@@ -43,26 +43,29 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ├── postcss.config.js
 ├── public
 │   ├── images
-│   │   └── nordwood-themes-unsplash.jpg
+│   │   ├── careercheck-logo.png
+│   │   ├── careercheck.png
+│   │   ├── favicon.ico
+│   │   ├── nordwood-themes-unsplash.jpg
+│   │   └── ruel-nopal.png
 │   ├── next.svg
 │   └── vercel.svg
 ├── src
 │   ├── app
 │   │   ├── data
 │   │   │   └── landingData.json
-│   │   ├── favicon.ico
-│   │   ├── globals.css
-│   │   └── layout.js
+│   │   └── favicon.ico
 │   ├── components
 │   │   ├── AddLinkButton.js
 │   │   ├── AuthorSection.js
 │   │   ├── CareerSection.js
 │   │   ├── FooterSection.js
-│   │   └── HeroSection.js
-│   ├── styles
-│   │   └── globals.css
-│   └── pages
-│       ├──\_app.js
-│       └── index.js
+│   │   ├── HeroSection.js
+│   │   └── MetaHead.js
+│   ├── pages
+│   │   ├── _app.js
+│   │   └── index.js
+│   └── styles
+│       └── globals.css
 └── tailwind.config.js
 ```
