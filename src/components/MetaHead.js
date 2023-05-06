@@ -42,15 +42,16 @@ const MetaHead = ({
       />
       <Script
         strategy="afterInteractive"
+        id="ga4-setup-script"
         dangerouslySetInnerHTML={{
           __html: `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '${ga4}', {
-        'stream_id': '${stream_id}'
-      });
-    `,
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${ga4}', {
+              'stream_id': '${stream_id}'
+            });
+          `,
         }}
       />
     </>
