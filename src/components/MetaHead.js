@@ -4,7 +4,7 @@ const MetaHead = ({ title, description, image, favicon }) => {
   return (
     <Head>
       <title>CareerCheck</title>
-      <link rel="icon" href="images/favicon.ico" />
+      <link rel="icon" href={favicon} />
       <title>{title}</title>
       <meta name="title" content={title} />
       <meta name="description" content={description} />

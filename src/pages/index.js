@@ -7,11 +7,11 @@ import MetaHead from "../components/MetaHead";
 import landingData from "../app/data/landingData.json";
 
 export default function Home({ landingData }) {
-  const { hero, career, author, footer } = landingData;
+  const { meta, hero, career, author, footer } = landingData;
 
   return (
     <div className="bg-gray-100 min-h-screen">
-      <MetaHead />
+      <MetaHead {...meta} />
       <main>
         <HeroSection {...hero} />
         <CareerSection {...career} />
