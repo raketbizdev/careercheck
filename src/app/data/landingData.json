@@ -1,7 +1,9 @@
 {
   "meta": {
     "title": "Welcome to CareerCheck",
-    "description": "Unlock Your Career Potential with CareerCheck - Your Personal Guide to Professional Growth and Success"
+    "description": "Unlock Your Career Potential with CareerCheck - Your Personal Guide to Professional Growth and Success",
+    "favicon": "images/favicon.ico",
+    "image": "images/nordwood-themes-unsplash.jpg"
   },
   "hero": {
     "title": "Welcome to CareerCheck",
@@ -63,9 +65,9 @@
     ]
   },
   "author": {
-    "heading": "The Author",
+    "heading": "About the Site",
     "name": "John Doe",
-    "image": "images/ruel-nopal.png",
+    "image": "images/careercheck.png",
     "description": "John Doe is an experienced career consultant and the founder of CareerCheck. He has helped thousands of individuals navigate their career paths and achieve their professional goals.",
     "social": {
       "facebook": "https://www.facebook.com/johndoe",

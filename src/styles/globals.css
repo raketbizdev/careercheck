@@ -7,6 +7,12 @@
   --color-secondary: #1a1a1a;
   --color-text: #1a1a1a;
   --color-background: #f9fafb;
+  --color-dark-blue: #154854;
+  --color-light-blue: #48AFF0;
+
+  --color-dark-gray: #F0F0F0;
+  --color-light-blue: #4D4D4D;
+  --color-light-blue: #73BE49;
 }
 
 @media (prefers-color-scheme: dark) {
