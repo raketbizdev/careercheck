@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 
 const MetaHead = ({ title, description, image, favicon, baseUrl, ga4 }) => {
   return (
@@ -24,11 +25,12 @@ const MetaHead = ({ title, description, image, favicon, baseUrl, ga4 }) => {
       <meta property="twitter:image" content={`${baseUrl}${image}`} />
 
       {/* Google Analytics 4 */}
-      <script
-        async
+      <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${ga4}`}
-      ></script>
-      <script
+        strategy="afterInteractive"
+      />
+      <Script
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
