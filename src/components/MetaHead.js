@@ -1,7 +1,15 @@
 import Head from "next/head";
 import Script from "next/script";
 
-const MetaHead = ({ title, description, image, favicon, baseUrl, ga4 }) => {
+const MetaHead = ({
+  title,
+  description,
+  image,
+  favicon,
+  baseUrl,
+  ga4,
+  stream_id,
+}) => {
   return (
     <>
       <Head>
@@ -34,14 +42,15 @@ const MetaHead = ({ title, description, image, favicon, baseUrl, ga4 }) => {
       />
       <Script
         strategy="afterInteractive"
-        id="ga4-setup-script"
         dangerouslySetInnerHTML={{
           __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${ga4}');
-          `,
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '${ga4}', {
+        'stream_id': '${stream_id}'
+      });
+    `,
         }}
       />
     </>

@@ -5,7 +5,8 @@
     "favicon": "images/favicon.ico",
     "image": "images/nordwood-themes-unsplash.jpg",
     "baseUrl": "https://raketbizdev.github.io/careercheck/",
-    "ga4": "G-NT3DHNMG24"
+    "ga4": "G-NT3DHNMG24",
+    "stream_id": "5166001327"
   },
   "hero": {
     "title": "Welcome to CareerCheck",
