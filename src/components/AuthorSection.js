@@ -14,7 +14,6 @@ const AuthorSection = ({ heading, name, image, description, social }) => {
       <div className="container mx-auto p-4 flex flex-wrap items-center">
         <div className="w-full md:w-1/2 mt-8 md:mt-0">
           <Image
-            src={image}
             className="mx-auto md:mx-0"
             src={image}
             alt={name}
