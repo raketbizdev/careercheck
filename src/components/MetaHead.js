@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const MetaHead = ({ title, description, image, favicon, baseUrl }) => {
+const MetaHead = ({ title, description, image, favicon, baseUrl, ga4 }) => {
   return (
     <Head>
       <title>CareerCheck</title>
@@ -22,6 +22,22 @@ const MetaHead = ({ title, description, image, favicon, baseUrl }) => {
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={`${baseUrl}${image}`} />
+
+      {/* Google Analytics 4 */}
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${ga4}`}
+      ></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', ${ga4});
+          `,
+        }}
+      />
     </Head>
   );
 };

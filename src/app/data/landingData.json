@@ -4,7 +4,8 @@
     "description": "Unlock Your Career Potential with CareerCheck - Your Personal Guide to Professional Growth and Success",
     "favicon": "images/favicon.ico",
     "image": "images/nordwood-themes-unsplash.jpg",
-    "baseUrl": "https://raketbizdev.github.io/careercheck/"
+    "baseUrl": "https://raketbizdev.github.io/careercheck/",
+    "ga4": "G-NT3DHNMG24"
   },
   "hero": {
     "title": "Welcome to CareerCheck",
