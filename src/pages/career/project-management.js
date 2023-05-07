@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-const ProjectManagement = () => (
+const ProjectManagement = ({ name, description }) => (
   <div>
-    <h1>Project Management</h1>
-    <p>Project Managers are responsible for planning, executing, and closing projects. They work closely with teams to ensure projects are completed on time, within scope, and within budget.</p>
+    <h1>{name}</h1>
+    <p>{description}</p>
   </div>
 );
 

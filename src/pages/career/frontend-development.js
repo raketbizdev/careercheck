@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-const FrontendDevelopment = () => (
+const FrontendDevelopment = ({ name, description }) => (
   <div>
-    <h1>Frontend Development</h1>
-    <p>Frontend Developers create user interfaces for web applications. They use HTML, CSS, and JavaScript to build responsive and visually appealing websites, focusing on usability and user experience.</p>
+    <h1>{name}</h1>
+    <p>{description}</p>
   </div>
 );
 

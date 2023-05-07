@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-const SocialMediaManager = () => (
+const SocialMediaManager = ({ name, description }) => (
   <div>
-    <h1>Social Media Manager</h1>
-    <p>Social Media Managers create and manage content on various social media platforms. They develop strategies to increase brand awareness, engage audiences, and drive website traffic, ultimately improving business results.</p>
+    <h1>{name}</h1>
+    <p>{description}</p>
   </div>
 );
 

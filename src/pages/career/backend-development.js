@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-const BackendDevelopment = () => (
+const BackendDevelopment = ({ name, description }) => (
   <div>
-    <h1>Backend Development</h1>
-    <p>Backend Developers build and maintain the server-side of web applications. They focus on implementing the application's logic, database interactions, and server configuration, ensuring a seamless user experience.</p>
+    <h1>{name}</h1>
+    <p>{description}</p>
   </div>
 );
 

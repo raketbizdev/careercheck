@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-const DevOpsEngineer = () => (
+const DevOpsEngineer = ({ name, description }) => (
   <div>
-    <h1>DevOps Engineer</h1>
-    <p>DevOps Engineers work at the intersection of software development and IT operations. They streamline the software delivery process by automating builds, tests, and deployments, while also ensuring system reliability and stability.</p>
+    <h1>{name}</h1>
+    <p>{description}</p>
   </div>
 );
 

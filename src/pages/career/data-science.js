@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-const DataScience = () => (
+const DataScience = ({ name, description }) => (
   <div>
-    <h1>Data Science</h1>
-    <p>Data Scientists analyze large datasets to extract insights and trends, using statistical models and machine learning techniques. They work in various industries to help organizations make data-driven decisions.</p>
+    <h1>{name}</h1>
+    <p>{description}</p>
   </div>
 );
 

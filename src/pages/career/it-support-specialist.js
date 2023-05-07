@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-const ITSupportSpecialist = () => (
+const ITSupportSpecialist = ({ name, description }) => (
   <div>
-    <h1>IT Support Specialist</h1>
-    <p>IT Support Specialists provide technical assistance to computer system users. They diagnose and resolve hardware and software issues, install and configure software and hardware, and maintain computer networks and systems.</p>
+    <h1>{name}</h1>
+    <p>{description}</p>
   </div>
 );
 

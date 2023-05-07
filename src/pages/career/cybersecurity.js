@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-const Cybersecurity = () => (
+const Cybersecurity = ({ name, description }) => (
   <div>
-    <h1>Cybersecurity</h1>
-    <p>Cybersecurity professionals protect computer systems, networks, and data from unauthorized access, theft, and damage. They monitor for security breaches, develop security policies, and implement protective measures to safeguard against cyber attacks.</p>
+    <h1>{name}</h1>
+    <p>{description}</p>
   </div>
 );
 

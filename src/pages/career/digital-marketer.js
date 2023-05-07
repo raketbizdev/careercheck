@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-const DigitalMarketer = () => (
+const DigitalMarketer = ({ name, description }) => (
   <div>
-    <h1>Digital Marketer</h1>
-    <p>Digital Marketers plan and execute marketing strategies for online channels, such as search engines, social media, email, and content marketing. They use data analysis to optimize campaigns and improve ROI.</p>
+    <h1>{name}</h1>
+    <p>{description}</p>
   </div>
 );
 
