@@ -2,7 +2,7 @@ import React from "react";
 import MetaHead from "../../components/MetaHead";
 import landingData from "../../app/data/landingData.json";
 
-const BusinessAnalyst = ({ careerData, meta }) => (
+const CareerPage = ({ careerData, meta }) => (
   <>
     <MetaHead title={meta.title} description={meta.description} />
     <main className="bg-gray-100 min-h-screen">
@@ -14,11 +14,13 @@ const BusinessAnalyst = ({ careerData, meta }) => (
   </>
 );
 
-export default BusinessAnalyst;
+export default CareerPage;
 
-export async function getStaticProps() {
-  const careerData = landingData.career.careers.find(
-    (career) => career.name === "Business Analyst"
+export async function getStaticProps(context) {
+  const careers = landingData.career.careers;
+  const careerName = context.params.careerName;
+  const careerData = careers.find(
+    (career) => career.name.toLowerCase().replace(/ /g, "-") === careerName
   );
 
   const meta = {
@@ -31,5 +33,17 @@ export async function getStaticProps() {
       careerData,
       meta,
     },
+  };
+}
+
+export async function getStaticPaths() {
+  const careers = landingData.career.careers;
+  const paths = careers.map((career) => ({
+    params: { careerName: career.name.toLowerCase().replace(/ /g, "-") },
+  }));
+
+  return {
+    paths,
+    fallback: false,
   };
 }
