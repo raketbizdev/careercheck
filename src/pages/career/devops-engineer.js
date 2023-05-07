@@ -1,4 +1,3 @@
-
 import React from "react";
 import MetaHead from "../../components/MetaHead";
 import landingData from "../../app/data/landingData.json";
@@ -19,7 +18,7 @@ export default DevOpsEngineer;
 
 export async function getStaticProps() {
   const careerData = landingData.career.careers.find(
-    (career) => career.name === "DevOpsEngineer"
+    (career) => career.name === "DevOps Engineer"
   );
 
   const meta = {

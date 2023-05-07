@@ -1,4 +1,3 @@
-
 import React from "react";
 import MetaHead from "../../components/MetaHead";
 import landingData from "../../app/data/landingData.json";
@@ -19,7 +18,7 @@ export default SocialMediaManager;
 
 export async function getStaticProps() {
   const careerData = landingData.career.careers.find(
-    (career) => career.name === "SocialMediaManager"
+    (career) => career.name === "Social Media Manager"
   );
 
   const meta = {
