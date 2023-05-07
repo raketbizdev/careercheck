@@ -11,6 +11,7 @@ import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import InsertChartOutlinedIcon from "@mui/icons-material/InsertChartOutlined";
 import DesktopWindowsOutlinedIcon from "@mui/icons-material/DesktopWindowsOutlined";
+import AddLinkButton from "./AddLinkButton";
 
 const iconTable = {
   "Data Science": <SchemaOutlinedIcon />,
@@ -49,9 +50,11 @@ const CareerSection = ({ heading, subheading, careers }) => {
             </h3>
             <p className="text-center">{career.description}</p>
             <div className="mt-4">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline">
+              <AddLinkButton
+                href={`/career/${career.name.toLowerCase().replace(/ /g, "-")}`}
+              >
                 Evaluate Career
-              </button>
+              </AddLinkButton>
             </div>
           </div>
         ))}

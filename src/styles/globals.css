@@ -10,15 +10,15 @@
   --color-dark-blue: #154854;
   --color-light-blue: #48AFF0;
 
-  --color-dark-gray: #F0F0F0;
-  --color-light-blue: #4D4D4D;
-  --color-light-blue: #73BE49;
+  --color-dark-gray: #4D4D4D;
+  --color-ligh-gray: #F0F0F0;
+  --color-bright-green: #73BE49;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primary: #0070f3;
-    --color-secondary: #f9fafb;
+    --color-primary: #154854;
+    --color-secondary: #4D4D4D;
     --color-text: #f9fafb;
     --color-background: #1a1a1a;
   }
@@ -39,7 +39,7 @@ button {
 }
 
 button:hover {
-  background-color: #0060c1;
+  background-color: --color-primary;
 }
 
 button:disabled {

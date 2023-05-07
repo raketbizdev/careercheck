@@ -13,9 +13,8 @@ const MetaHead = ({
   return (
     <>
       <Head>
-        <title>CareerCheck</title>
-        <link rel="icon" href={favicon} />
         <title>{title}</title>
+        <link rel="icon" href={favicon} />
         <meta name="title" content={title} />
         <meta name="description" content={description} />
 
