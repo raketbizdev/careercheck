@@ -1,0 +1,21 @@
+.tab-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.25rem;
+}
+
+.tab-button-active {
+  background-color: #154854;
+  color: #F0F0F0;
+}
+
+.tab-button-inactive {
+  background-color: #4D4D4D;
+  color: #1a1a1a;
+}
+
+.tab-button-inactive:hover {
+  background-color: #3d3d3d;
+  color: #F0F0F0;
+}

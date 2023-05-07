@@ -11,6 +11,7 @@ import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import InsertChartOutlinedIcon from "@mui/icons-material/InsertChartOutlined";
 import DesktopWindowsOutlinedIcon from "@mui/icons-material/DesktopWindowsOutlined";
+import PestControlOutlinedIcon from "@mui/icons-material/PestControlOutlined";
 import AddLinkButton from "./AddLinkButton";
 
 const iconTable = {
@@ -26,6 +27,7 @@ const iconTable = {
   "DevOps Engineer": <SettingsOutlinedIcon />,
   "Data Analyst": <InsertChartOutlinedIcon />,
   "IT Support Specialist": <DesktopWindowsOutlinedIcon />,
+  "Bug Report": <PestControlOutlinedIcon />,
 };
 
 const CareerSection = ({ heading, subheading, careers }) => {
