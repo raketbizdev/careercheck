@@ -22,20 +22,17 @@ CareerCheck is a web application designed to help users explore and evaluate the
 ├── package.json
 ├── postcss.config.js
 ├── public
-│   ├── images
-│   │   ├── careercheck-logo.png
-│   │   ├── careercheck.png
-│   │   ├── favicon.ico
-│   │   ├── nordwood-themes-unsplash.jpg
-│   │   └── ruel-nopal.png
-│   ├── next.svg
-│   └── vercel.svg
+│   └── images
+│       ├── careercheck-logo.png
+│       ├── careercheck.png
+│       ├── favicon.ico
+│       ├── nordwood-themes-unsplash.jpg
+│       └── ruel-nopal.png
 ├── src
 │   ├── app
 │   │   ├── data
 │   │   │   ├── landingData.json
 │   │   │   └── personalInfo.json
-│   │   ├── favicon.ico
 │   │   └── helper
 │   ├── components
 │   │   ├── AddLinkButton.js
