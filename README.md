@@ -1,71 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CareerCheck
 
-## Getting Started
+CareerCheck is a web application designed to help users explore and evaluate their career options. Users can input their personal information, education, training, work experience, and personal circumstances to receive personalized career recommendations and guidance.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Personal Information: Collects user's basic personal details.
+- Education: Allows users to input their educational background.
+- Training: Users can add any training or certifications they have completed.
+- Work Experience: Users can input their work experience and job history.
+- Personal Circumstances: Users can add any personal circumstances that may impact their career choices.
+- Personalized Recommendations: Based on the user's input, the app provides tailored career guidance.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+````bash
+git clone https://github.com/raketbizdev/careercheck.git
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Change to the project directory:
 
 ```bash
-.
-├── README.md
-├── jsconfig.json
-├── next.config.js
-├── package-lock.json
-├── package.json
-├── postcss.config.js
-├── public
-│   ├── images
-│   │   ├── careercheck-logo.png
-│   │   ├── careercheck.png
-│   │   ├── favicon.ico
-│   │   ├── nordwood-themes-unsplash.jpg
-│   │   └── ruel-nopal.png
-│   ├── next.svg
-│   └── vercel.svg
-├── src
-│   ├── app
-│   │   ├── data
-│   │   │   └── landingData.json
-│   │   └── favicon.ico
-│   ├── components
-│   │   ├── AddLinkButton.js
-│   │   ├── AuthorSection.js
-│   │   ├── CareerSection.js
-│   │   ├── FooterSection.js
-│   │   ├── HeroSection.js
-│   │   └── MetaHead.js
-│   ├── pages
-│   │   ├── _app.js
-│   │   └── index.js
-│   └── styles
-│       └── globals.css
-└── tailwind.config.js
+cd careercheck
+````
+
+3. Install the required dependencies:
+
+```bash
+npm install
 ```
+
+4. Start the development server:
+
+```bash
+npm start
+```
+
+The application should now be running on `http://localhost:3000`.
+
+## Usage
+
+To use CareerCheck, simply navigate to the application URL (either local or deployed) and start filling out the different sections of the questionnaire. Once all the relevant information has been entered, click the 'Submit' button to receive personalized career recommendations and guidance.
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch with a descriptive name (e.g., `feature/new-section` or `fix/typo`).
+3. Commit your changes to the new branch.
+4. Submit a pull request to the main repository.
+
+## License
+
+This project is licensed under the MIT License. For more information, please see the [LICENSE](LICENSE) file.
+
+---
+
+Made with ❤️ by [Your Name](https://github.com/raketbizdev)

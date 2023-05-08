@@ -27,7 +27,7 @@ const iconTable = {
   "DevOps Engineer": <SettingsOutlinedIcon />,
   "Data Analyst": <InsertChartOutlinedIcon />,
   "IT Support Specialist": <DesktopWindowsOutlinedIcon />,
-  "Bug Report": <PestControlOutlinedIcon />,
+  "QA Engineering": <PestControlOutlinedIcon />,
 };
 
 const CareerSection = ({ heading, subheading, careers }) => {
