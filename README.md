@@ -23,15 +23,15 @@ CareerCheck is a web application designed to help users explore and evaluate the
 
 1. Clone the repository:
 
-````bash
+```bash
 git clone https://github.com/raketbizdev/careercheck.git
-
+```
 
 2. Change to the project directory:
 
 ```bash
 cd careercheck
-````
+```
 
 3. Install the required dependencies:
 
@@ -64,4 +64,4 @@ This project is licensed under the MIT License. For more information, please see
 
 ---
 
-Made with ❤️ by [Your Name](https://github.com/raketbizdev)
+Made with ❤️ by [Ruel](https://github.com/raketbizdev)
