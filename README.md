@@ -4,11 +4,65 @@ CareerCheck is a web application designed to help users explore and evaluate the
 
 ## Table of Contents
 
+- [Directory](#Directory)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Directory
+
+```bash
+.
+├── README.md
+├── jsconfig.json
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public
+│   ├── images
+│   │   ├── careercheck-logo.png
+│   │   ├── careercheck.png
+│   │   ├── favicon.ico
+│   │   ├── nordwood-themes-unsplash.jpg
+│   │   └── ruel-nopal.png
+│   ├── next.svg
+│   └── vercel.svg
+├── src
+│   ├── app
+│   │   ├── data
+│   │   │   ├── landingData.json
+│   │   │   └── personalInfo.json
+│   │   ├── favicon.ico
+│   │   └── helper
+│   ├── components
+│   │   ├── AddLinkButton.js
+│   │   ├── AuthorSection.js
+│   │   ├── CareerSection.js
+│   │   ├── FooterSection.js
+│   │   ├── HeroSection.js
+│   │   ├── MetaHead.js
+│   │   ├── QuestionnaireSections.js
+│   │   └── questionnaire
+│   │       ├── Education.js
+│   │       ├── PersonalCircumstances.js
+│   │       ├── PersonalInfo.js
+│   │       ├── Training.js
+│   │       └── WorkExperience.js
+│   ├── pages
+│   │   ├── _app.js
+│   │   ├── career
+│   │   │   └── [careerName].js
+│   │   └── index.js
+│   └── styles
+│       ├── buttons.css
+│       ├── general.css
+│       ├── globals.css
+│       └── tabs.css
+└── tailwind.config.js
+```
 
 ## Features
 
